@@ -1,4 +1,4 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+	# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 
@@ -14,13 +14,13 @@ compinit
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 # Theme
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Manual configurations
-PATH=/usr:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/sbin:/sbin:/usr/sbin:/home/daniel/.local/bin:/snap/bin:/usr/local/go/bin:/home/daniel/go/bin:/home/daniel/Tools
+PATH=/usr:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/local/sbin:/sbin:/usr/sbin:/home/daniel/.local/bin:/snap/bin:/usr/local/go/bin:/home/daniel/go/bin:/home/daniel/Tools:/home/j/.local/bin
 
 # History settings
 HISTSIZE=10000
@@ -67,10 +67,10 @@ function man() {
 }
 
 # Manual plugins
-#source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 source /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
-#source /usr/share/zsh/plugins/zsh-bd/bd.zsh
-#source /usr/share/zsh/plugins/gf-completion/gf-completion.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Plugins
 plugins=(
@@ -106,5 +106,3 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-source /home/j/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
