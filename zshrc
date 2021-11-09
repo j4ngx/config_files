@@ -106,3 +106,10 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+#Configurate the I-Bean when exit NVIM
+_fix_cursor() {
+   echo -ne '\e[5 q'
+}
+
+precmd_functions+=(_fix_cursor)
