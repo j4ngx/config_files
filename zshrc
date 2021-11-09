@@ -38,20 +38,11 @@ alias cat='/usr/bin/bat'
 alias catn='/usr/bin/cat'
 alias catnl='/usr/bin/bat --paging=never'
 
-alias john='sudo /snap/bin/john'
-
-alias scan='bash /home/daniel/Scripts/scan.sh'
-alias autorecon='bash /home/daniel/Scripts/Bug\ Bounty/autorecon.sh'
-
-alias htb='sudo openvpn ~/HackTheBox/D1r0x.ovpn'
-alias thm='sudo openvpn ~/TryHackMe/Dirox.ovpn'
 
 # Utils
 alias www='python3 -m http.server'
 alias untar='tar -xvf'
 alias hosts='sudo nano /etc/hosts'
-alias ffufdefault='ffuf -w /home/daniel/Diccionarios/directory_wordlist.txt -u '
-alias exiftool='/home/daniel/Tools/Image-ExifTool-12.15/exiftool'
 
 # Set 'man' colors
 function man() {
